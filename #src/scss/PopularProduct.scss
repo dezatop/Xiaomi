@@ -1,0 +1,122 @@
+.popular__product {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &-title {
+    display: flex;
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #231D1D;
+    padding-bottom: 8px;
+    margin-bottom: 53px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      border-radius: 5px;
+      background: #C4C4C4;
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      border-radius: 5px;
+      background: #FF6A08;
+      width: 76px;
+      z-index: 10;
+    }
+  }
+
+  .list__categories {
+    align-items: center;
+
+    > li {
+      cursor: pointer;
+      font-family: Lota sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #231D1D;
+      margin-right: 60px;
+
+      &:hover {
+        color: #FF6A08;
+      }
+
+      &:last-of-type {
+        margin-right: 0px !important;
+      }
+    }
+  }
+
+  .list__under {
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .__product {
+    padding: 20px 0px 23px 0px;
+    max-width: 270px;
+    width: 100%;
+    background: #FAFDFF;
+    box-shadow: 0px 20px 40px rgba(158, 158, 158, 0.2);
+    border-radius: 5px;
+    max-height: 478px;
+    height: 100%;
+
+    .product__img {
+      max-height: 228px;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    .container__description {
+      padding-left: 25px;
+      padding-right: 15px;
+
+      .product__description {
+        margin-top: 20px;
+        margin-bottom: 16px;
+
+        .product__like {
+          @include FAC;
+          justify-content: space-between;
+          font-family: Lota sans-serif;
+          font-size: 14px;
+          color: #231D1D;
+          line-height: 21px;
+
+          > img {
+            cursor: pointer;
+            padding-right: 7px;
+          }
+        }
+      }
+
+      .product__title {
+        > h1 {
+          font-family: Lota sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #231D1D;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+  }
+}

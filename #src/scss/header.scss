@@ -107,41 +107,57 @@
       }
     }
 
-    .form__search {
-      display: flex;
+    .search__container {
+      width: 380px;
+      .form__search {
+        display: flex;
+        width: 380px;
+        > input {
+          outline: none;
+          height: 50px;
+          font-size: 14px;
+          font-family: Lato, sans-serif;
+          max-width: 335px;
+          width: 100%;
+          border: 1px solid #E0E0E0;
+          padding: 14px 20px 15px 20px;
+        }
 
-      > input {
-        outline: none;
-        height: 50px;
-        font-size: 14px;
-        font-family: Lato, sans-serif;
-        max-width: 335px;
-        width: 100%;
-        border: 1px solid #E0E0E0;
-        padding: 14px 20px 15px 20px;
-      }
-
-      > button {
-        @include FAC;
-        background: #fff;
-        border: 1px solid #E0E0E0;
-        border-left: none;
-        justify-content: center;
-        height: 50px;
-        width: 44px;
+        > button {
+          @include FAC;
+          background: #fff;
+          border: 1px solid #E0E0E0;
+          border-left: none;
+          justify-content: center;
+          height: 50px;
+          width: 44px;
+        }
       }
     }
 
+
     .order-phone {
-      display: flex;
-      align-items: center;
+      @include FAC;
+      margin-left: 57px;
+      width: 381px;
       .phone {
         font-family: Lato, sans-serif;
         font-size: 18px;
         font-weight: 800;
-
+        margin-right: 23px;
         > a {
           color: #231D1D;
+        }
+      }
+    }
+
+    .cart {
+      @include FAC;
+      flex: 1;
+      padding-left: 44px;
+      >a {
+        &:first-of-type {
+          margin-right: 19px;
         }
       }
     }

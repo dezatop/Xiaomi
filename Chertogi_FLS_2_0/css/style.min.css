@@ -267,10 +267,14 @@ body._lock {
 .under__header .wrapper__under__header .catalog > img {
   margin-right: 13px;
 }
-.under__header .wrapper__under__header .form__search {
-  display: flex;
+.under__header .wrapper__under__header .search__container {
+  width: 380px;
 }
-.under__header .wrapper__under__header .form__search > input {
+.under__header .wrapper__under__header .search__container .form__search {
+  display: flex;
+  width: 380px;
+}
+.under__header .wrapper__under__header .search__container .form__search > input {
   outline: none;
   height: 50px;
   font-size: 14px;
@@ -280,7 +284,7 @@ body._lock {
   border: 1px solid #E0E0E0;
   padding: 14px 20px 15px 20px;
 }
-.under__header .wrapper__under__header .form__search > button {
+.under__header .wrapper__under__header .search__container .form__search > button {
   display: flex;
   align-items: center;
   background: #fff;
@@ -293,14 +297,26 @@ body._lock {
 .under__header .wrapper__under__header .order-phone {
   display: flex;
   align-items: center;
+  margin-left: 57px;
+  width: 381px;
 }
 .under__header .wrapper__under__header .order-phone .phone {
   font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: 800;
+  margin-right: 23px;
 }
 .under__header .wrapper__under__header .order-phone .phone > a {
   color: #231D1D;
+}
+.under__header .wrapper__under__header .cart {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 44px;
+}
+.under__header .wrapper__under__header .cart > a:first-of-type {
+  margin-right: 19px;
 }
 
 /*
@@ -356,6 +372,111 @@ body._lock {
   color: #fff;
   font-size: 16px;
   font-weight: 800;
+}
+
+.popular__product {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.popular__product-title {
+  display: flex;
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #231D1D;
+  padding-bottom: 8px;
+  margin-bottom: 53px;
+}
+.popular__product-title:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: #C4C4C4;
+  width: 100%;
+}
+.popular__product-title:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: #FF6A08;
+  width: 76px;
+  z-index: 10;
+}
+.popular__product .list__categories {
+  align-items: center;
+}
+.popular__product .list__categories > li {
+  cursor: pointer;
+  font-family: Lota sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #231D1D;
+  margin-right: 60px;
+}
+.popular__product .list__categories > li:hover {
+  color: #FF6A08;
+}
+.popular__product .list__categories > li:last-of-type {
+  margin-right: 0px !important;
+}
+.popular__product .list__under {
+  justify-content: center;
+  margin-top: 35px;
+}
+.popular__product .__product {
+  padding: 20px 0px 23px 0px;
+  max-width: 270px;
+  width: 100%;
+  background: #FAFDFF;
+  box-shadow: 0px 20px 40px rgba(158, 158, 158, 0.2);
+  border-radius: 5px;
+  max-height: 478px;
+  height: 100%;
+}
+.popular__product .__product .product__img {
+  max-height: 228px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.popular__product .__product .product__img > img {
+  width: 100%;
+}
+.popular__product .__product .container__description {
+  padding-left: 25px;
+  padding-right: 15px;
+}
+.popular__product .__product .container__description .product__description {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.popular__product .__product .container__description .product__description .product__like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Lota sans-serif;
+  font-size: 14px;
+  color: #231D1D;
+  line-height: 21px;
+}
+.popular__product .__product .container__description .product__description .product__like > img {
+  cursor: pointer;
+  padding-right: 7px;
+}
+.popular__product .__product .container__description .product__title > h1 {
+  font-family: Lota sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231D1D;
+  margin-bottom: 15px;
 }
 
 .page {

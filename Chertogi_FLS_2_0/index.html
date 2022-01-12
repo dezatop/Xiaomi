@@ -74,7 +74,7 @@
 					<img src="./img/icons/catalog.svg" alt="catalog">
 					<span>Каталог товаров</span>
 				</div>
-				<div class="col-4 p-0">
+				<div class="col-4 p-0 search__container">
 					<form class="form__search" action="">
 						<input placeholder="Поиск товаров из 15000 наименованиий" type="text">
 						<button type="submit">
@@ -82,7 +82,7 @@
 						</button>
 					</form>
 				</div>
-				<div class="col-4 order-phone" >
+				<div class="col-4 order-phone p-0" >
 					<div class=phone>
 						<a href="tel:+8495000-00-00">
 							+8 (495) 000-00-00
@@ -92,8 +92,9 @@
 						Заказать звонак
 					</button>
 				</div>
-				<div class="col-1">
-					<span>1</span>
+				<div class="col-1 cart">
+					<a href="#"><img src="img/icons/heart.svg" alt=""></a>
+					<a href="#"><img src="img/icons/cart.svg" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -102,6 +103,58 @@
 </header>
 
 			<main class="page">
+				<div class="_container popular__product">
+    <div class="row">
+        <div class="col-4 d-flex">
+            <h1 class="popular__product-title">
+                Популярные товары
+            </h1>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col-12">
+            <ul class="d-flex list__categories">
+                <li>Смартфоны</li>
+                <li>Ноутбуки, Компьютери</li>
+                <li>Гаджеты, Устроиства</li>
+                <li>Умный дом</li>
+                <li>Зарядные устроиства</li>
+                <li>Аксессуары</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="d-flex list__categories list__under">
+                <li>Наушники и колонки</li>
+                <li>Красота и здоровье</li>
+                <li>Транспорт</li>
+                <li>Образ жизни</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="__product">
+            <div class="product__img">
+                <img src="./img/phone.png" alt="phone">
+            </div>
+            <div class="container__description">
+                <div class="product__description">
+                    <div class="product__like">
+                        <span>Смартфон</span>
+                        <img src="./img/icons/heart_product.svg" alt="heart_product">
+                    </div>
+                </div>
+                <div class="product__title">
+                    <h1>
+                        Xiaomo Mi 11T Pro 8GB /<br/> 256GB  (Grey)
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 			</main>
 			<footer class="footer">
