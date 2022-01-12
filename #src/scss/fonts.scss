@@ -1,4 +1,6 @@
-@include font("Gilroy-Bold", "Gilroy-Bold", "400", "normal");
-@include font("Gilroy-Medium", "Gilroy-Medium", "400", "normal");
-@include font("Gilroy-SemiBold", "Gilroy-SemiBold", "400", "normal");
-@include font("Gilroy-Regular", "Gilroy-Regular", "400", "normal");
+@include font("Lato", "Lato-Regular", "400", "normal");
+@include font("Lato", "Lato-Light", "300", "light");
+@include font("Lato", "Lato-Medium", "500", "medium");
+@include font("Lato", "Lato-Semibold", "600", "SemiBold");
+@include font("Lato", "Lato-Heavy", "800", "Bold");
+@include font("Lato", "Lato-Black", "900", "ExtraBold");
