@@ -116,6 +116,45 @@
           margin-bottom: 15px;
         }
       }
+
+      .cost__cart {
+        font-family: Lota, sans-serif;
+        display: flex;
+        justify-content: space-between;
+
+        .container__cost {
+          margin-bottom: 9px;
+          .old__cost {
+            text-decoration: line-through;
+            margin-right: 27px;
+            margin-bottom: 9px;
+            font-size: 12px;
+            color: #4F4F4F;
+            line-height: 14px;
+          }
+          .cost {
+            color: #FF6A08;
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          .current__cost {
+
+          }
+        }
+
+
+        >button {
+          @include FAC;
+          border-radius: 5px;
+          justify-content: center;
+          background: #FF6A08;
+          padding: 7px 12px;
+          height: 50px;
+          width: 60px;
+        }
+
+      }
     }
 
   }
