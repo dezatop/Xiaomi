@@ -1,0 +1,28 @@
+.container__benefits {
+  background: #F1F1F1;
+  padding: 50px 135px;
+  .benefits_wrap {
+    display: flex;
+  }
+  .container_element_block {
+    display: flex;
+    gap: 102px;
+    height: 180px;
+
+    >div{
+      font-family: Lota, sans-serif;
+      line-height: 27px;
+      color: #231D1D;
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      >img {
+        max-width: 128px;
+        max-height: 128px;
+      }
+    }
+  }
+}

@@ -83,11 +83,7 @@ body {
 //@import "lightgallery";
 //@import "pagging";
 //@import "popup";
-@import "header";
-@import "commonButton";
-@import "PopularProduct";
-@import "catalog";
-@import "footer";
+
 //@import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -98,3 +94,11 @@ body {
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+@import "header";
+@import "commonButton";
+@import "PopularProduct";
+@import "catalog";
+@import "stock";
+@import "benefits";
+@import "new";
+@import "footer";
