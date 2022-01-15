@@ -238,3 +238,16 @@ new Swiper('.productOnDaySwiper', {
     },
 });
 
+//footer select-link
+
+const footer__lists=document.querySelectorAll('.footer__list')
+
+footer__lists.forEach((el)=>{
+    el.addEventListener('click',()=>{
+        if( el.classList.contains('active')){
+            el.classList.remove('active')
+        }else{
+            el.classList.add('active')
+        }
+    })
+})
