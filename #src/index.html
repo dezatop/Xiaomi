@@ -7,6 +7,7 @@
 		<div class="wrapper">
 			@@include('_header.html',{})
 			<main class="page">
+				@@include('ProductOnDay.html',{})
 				@@include('PopularProduct.html',{})
 				@@include('_catalog.html',{})
 				@@include('stock.html',{})
@@ -16,7 +17,8 @@
 			</main>
 			@@include('_footer.html',{})
 		</div>
-		@@include('_popup.html',{})
+		@@include('_popupProduct.html',{})
+		@@include('_popupShoppingCart.html',{})
 		@@include('_js.html',{})
 	</body>
 </html>

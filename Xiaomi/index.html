@@ -89,13 +89,13 @@
 							+8 (495) 000-00-00
 						</a>
 					</div>
-					<button class="buttonCom">
+					<button href="#popup" class="buttonCom _popup-link">
 						Заказать звонак
 					</button>
 				</div>
 				<div class="col-1 cart">
 					<a href="#"><img src="img/icons/heart.svg" alt=""></a>
-					<a href="#"><img src="img/icons/cart.svg" alt=""></a>
+					<a href="#popup2" class="_popup-link"><img src="img/icons/cart.svg" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -104,6 +104,83 @@
 </header>
 
 			<main class="page">
+				<section class="product-on">
+
+    <img src="img/icons_IgD/bg_1.png" class="product-on__img">
+
+    <div class="_container product-on__Day row">
+
+        <div class="wrapper__slider col-9 ">
+            <div class="productOnDaySwiper ">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class=" ">
+                                <h1 class="">
+                                    Интернет-магазин техники <br>
+                                  <span>
+                                       XIAOMI
+                                  </span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="day-product col-3">
+            <div class="__product">
+                <div class="product__img">
+                    <img src="./img/phone.png" alt="phone">
+                </div>
+                <div class="container__description">
+                    <div class="product__description">
+                        <div class="product__like">
+                            <span>Смартфон</span>
+                            <img src="./img/icons/heart_product.svg" alt="heart_product">
+                        </div>
+                    </div>
+                    <div class="product__title">
+                        <h1>
+                            Xiaomo Mi 11 Ultra 8GB /<br/> 256GB  (Grey)
+                        </h1>
+                    </div>
+                    <form>
+                        <fieldset>
+                                        <span class="star-cb-group">
+                                          <input type="radio" id="rating-51.11" name="rating" value="5" /><label for="rating-51.11">5</label>
+                                          <input type="radio" id="rating-41.22" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                          <input type="radio" id="rating-31.33" name="rating" value="3" /><label for="rating-41.22">3</label>
+                                          <input type="radio" id="rating-21.44" name="rating" value="2" /><label for="rating-31.33">2</label>
+                                          <input type="radio" id="rating-11.55" name="rating" value="1" /><label for="rating-21.44">1</label>
+                                          <input type="radio" id="rating-01.66" name="rating" value="0" class="star-cb-clear" /><label for="rating-11.55">0</label>
+                                        </span>
+                        </fieldset>
+                    </form>
+                    <div class="cost__cart">
+                        <div>
+                            <div class="container__cost">
+                                <span class="old__cost">55 000</span>
+                                <span class="cost">-10 000</span>
+                            </div>
+                            <span class="current__cost">
+                                                45 000
+                                            </span>
+                        </div>
+                        <button>
+                            <img src="./img/icons/cart_product.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
 				<div class="_container popular__product">
     <div class="row">
         <div class="col-4 d-flex">
@@ -1319,29 +1396,164 @@
 	</div>
 </footer>
 		</div>
-		<div class="popup popup_popup">
+		
+<div class="popup popup_popup">
 	<div class="popup__content">
 		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close"></div>
-		</div>
-	</div>
-</div>
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
+				<div class="popup__close icon">
+					<img src="img/icons_IgD/close.svg" alt="">
+				</div>
+				<div class="popup__title">
+					<img src="img/icons_IgD/ok.svg" alt="">
+					<div class="">Товар добавлен в корзину</div>
+				</div>
 
+				<div class="popup__add-block ">
+					<img src="img/icons_IgD/5product.png" alt="" class="product-block__img">
+					<div class="product-block">
+						<div class="product-block__title">
+							<div  class="product-block__title-p">
+								Xiaomi Redmi Note 10S, 256GB, Blue grey
+							</div>
+							<img src="img/icons_IgD/korzina.svg" alt="" class="product-block__title-img">
+						</div>
+						<div>
+							<div class="product-block__price">
+								<div class="p">
+									<span>35 900</span>
+									<span>-700</span>
+								</div>
+								<div class="h">35 200 рублей</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="popup__buttons">
+					<div class="card__button popup__button1 popup__close">
+						<img src="img/icons_IgD/back.svg" alt="">
+						<div class="p">
+							Продолжить покупки
+						</div>
+					</div>
+					<div class="card__button popup__button2">
+							<button  class="buttonCom popup__button2">
+								Оформить заказ
+							</button>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+		
+<div class="popup popup_popup2">
+	<div class="popup__content popup__content2">
+		<div class="popup__body popup__body2">
+			<div class="popup__close icon cart">
+				<img src="img/icons_IgD/close.svg" alt="">
+			</div>
+			<div class="popup__title cart">
+				<div class="">Корзина</div>
+			</div>
+
+			<div class="popup__add-block__container">
+
+				<div class="popup__add-block ">
+					<img src="img/icons_IgD/5product.png" alt="" class="product-block__img">
+					<div class="product-block">
+						<div class="product-block__title">
+							<div  class="product-block__title-p">
+								Xiaomi Redmi Note 10S, 256GB, Blue grey
+							</div>
+							<img src="img/icons_IgD/korzina.svg" alt="" class="product-block__title-img">
+						</div>
+						<div class="product-block__price__container">
+							<div>
+
+								<div class="product-block__price-count">
+									<div class="buttonCountMinus color" >
+										-
+									</div>
+									<div class="buttonCountNumber">
+										1
+									</div>
+									<div class="buttonCountPlus">
+										+
+									</div>
+								</div>
+							</div>
+							<div class="product-block__price">
+								<div class="p">
+									<span>35 900</span>
+									<span>-700</span>
+								</div>
+								<div class="h">35 200 рублей</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="popup__add-block ">
+					<img src="img/icons_IgD/5product.png" alt="" class="product-block__img">
+					<div class="product-block">
+						<div class="product-block__title">
+							<div  class="product-block__title-p">
+								Xiaomi Redmi Note 10S, 256GB, Blue grey
+							</div>
+							<img src="img/icons_IgD/korzina.svg" alt="" class="product-block__title-img">
+						</div>
+						<div class="product-block__price__container">
+							<div>
+
+								<div class="product-block__price-count">
+									<div class="buttonCountMinus color" >
+										-
+									</div>
+									<div class="buttonCountNumber">
+										1
+									</div>
+									<div class="buttonCountPlus">
+										+
+									</div>
+								</div>
+							</div>
+							<div class="product-block__price">
+								<div class="p">
+									<span>35 900</span>
+									<span>-700</span>
+								</div>
+								<div class="h">35 200 рублей</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="popup__result product-block__price">
+				<span>Итого:</span>
+				<div class="h">35 200 </div>
+			</div>
+
+			<div class="popup__buttons">
+				<div class="card__button popup__button1 popup__close">
+					<img src="img/icons_IgD/back.svg" alt="">
+					<div class="p">
+						Продолжить покупки
+					</div>
+				</div>
+				<div class="card__button popup__button2">
+					<button  class="buttonCom popup__button2">
+						Оформить заказ
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 		<!-- Swiper -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/vendors.min.js"></script>
