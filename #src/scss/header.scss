@@ -54,32 +54,35 @@
       }
     }
   }
+}
 
-  .wrapper__social {
-    @include FAC;
-    padding-left: 50px;
+.wrapper__social {
+  @include FAC;
+  padding-left: 50px;
 
-    .container__social {
-      display: flex;
-      margin-bottom: 0;
+  .container__social {
+    display: flex;
+    margin-bottom: 0;
 
-      > li {
-        cursor: pointer;
-        @include FAC;
-        justify-content: center;
-        min-height: 30px;
-        min-width: 30px;
-        border-radius: 50%;
-        border: 1px solid #4F4F4F;
-        margin-right: 15px;
+    > li {
+      cursor: pointer;
+      @include FAC;
+      justify-content: center;
+      min-height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      border: 1px solid #4F4F4F;
+      margin-right: 15px;
 
-        &:last-of-type {
-          margin-right: 0px !important;
-        }
+      &:last-of-type {
+        margin-right: 0px !important;
+      }
+
+      >a {
+        display: flex;
       }
     }
   }
-
 }
 
 .under__header {

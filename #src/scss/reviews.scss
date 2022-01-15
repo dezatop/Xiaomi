@@ -1,0 +1,136 @@
+.container_bg_abs {
+  position: relative;
+}
+
+.container_reviews {
+  margin-top: 100px;
+
+}
+
+.wrap-comment {
+  margin-top: 62px;
+
+}
+
+.bg__photo {
+  position: absolute;
+  bottom: 110px;
+  height: 222px;
+  width: 111px;
+  >img{
+    width: 100%;
+  }
+}
+
+.link_magazin {
+  font-family: Lota, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #231D1D;
+
+}
+
+.link_yandex {
+  display: flex;
+  max-width: 225px;
+  max-height: 45px;
+  margin-top: 26px;
+
+  >img {
+    width: 100%;
+  }
+}
+
+.reviews_fieldset {
+  margin-top: 38px;
+  margin-bottom: 21px;
+}
+
+.statistic_rating {
+  font-family: Lota, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #231D1D;
+}
+.write_more {
+  font-family: Lota, sans-serif;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  >a {
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #231D1D;
+  }
+}
+.color_orange {
+  color: #FF6A08;
+}
+
+.container_comment {
+  gap: 30px;
+}
+
+.block_comment {
+  width: 400px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(158, 158, 158, 0.2);
+  padding: 25px;
+
+  .wrapper_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #231D1D;
+    margin-bottom: 32px;
+
+    >div {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .comment_profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FF6A08;
+      border-radius: 50%;
+      min-height: 37px;
+      min-width: 37px;
+      max-width: 37px;
+      max-height: 37px;
+    }
+    .profile_rating {
+      margin: 0;
+    }
+  }
+}
+.list_comment {
+  p {
+    font-family: Lota, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #231D1D;
+  }
+  >ul {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+}
+
+.write_more_link {
+  margin-top: 45px;
+}
