@@ -229,11 +229,12 @@ price_count.forEach((el=>{
 //ProductOnDay slider
 
 new Swiper('.productOnDaySwiper', {
-    slidesPerView: 4,
-    initialSlide:0,
+    slidesPerView: 1,
     speed: 400,
-    spaceBetween: 30,
+    spaceBetween: 600,
     pagination: {
+        el: ".productOnDaySwiper__swiper-pagination",
+        clickable: true
     },
 });
 
