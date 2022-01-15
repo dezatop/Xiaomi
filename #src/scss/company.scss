@@ -1,16 +1,16 @@
-.new_block {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.container_company {
+  background-image: url("../img/bg-company.png");
 }
-.new_title {
+
+.company_title {
   display: flex;
   position: relative;
   font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 32px;
-  color: #231D1D;
+  color: #fff;
   padding-bottom: 8px;
-  margin-bottom: 23px;
+  margin-bottom: 3px;
 
   &:after {
     content: '';
@@ -34,4 +34,13 @@
     width: 24px;
     z-index: 10;
   }
+}
+
+.description_company {
+  padding-top: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Lota, sans-serif;
+  line-height: 24px;
 }

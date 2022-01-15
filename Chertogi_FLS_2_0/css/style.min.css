@@ -766,7 +766,8 @@ fieldset {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.new_block .new_title {
+
+.new_title {
   display: flex;
   position: relative;
   font-family: Lato, sans-serif;
@@ -776,7 +777,7 @@ fieldset {
   padding-bottom: 8px;
   margin-bottom: 23px;
 }
-.new_block .new_title:after {
+.new_title:after {
   content: "";
   position: absolute;
   height: 3px;
@@ -786,7 +787,7 @@ fieldset {
   background: #C4C4C4;
   width: 100%;
 }
-.new_block .new_title:before {
+.new_title:before {
   content: "";
   position: absolute;
   height: 3px;
@@ -796,4 +797,49 @@ fieldset {
   background: #FF6A08;
   width: 24px;
   z-index: 10;
+}
+
+.container_company {
+  background-image: url("../img/bg-company.png");
+}
+
+.company_title {
+  display: flex;
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 8px;
+  margin-bottom: 3px;
+}
+.company_title:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: #C4C4C4;
+  width: 100%;
+}
+.company_title:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: #FF6A08;
+  width: 24px;
+  z-index: 10;
+}
+
+.description_company {
+  padding-top: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Lota, sans-serif;
+  line-height: 24px;
 }
