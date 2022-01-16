@@ -251,3 +251,49 @@ footer__lists.forEach((el)=>{
         }
     })
 })
+
+
+// ProductView slider
+
+new Swiper('.productViewSwiper', {
+    slidesPerView: 1,
+    speed: 400,
+    spaceBetween: 600,
+    pagination: {
+        el: ".productViewSwiper__swiper-pagination",
+        clickable: true
+    },
+});
+
+const productViewSwiper=document.querySelector('.productViewSwiper')
+
+if(productViewSwiper){
+    const container = productViewSwiper.querySelector('.productViewSwiper__swiper-pagination__container')
+    const pagination = productViewSwiper.querySelector('.productViewSwiper__swiper-pagination')
+    const slides = productViewSwiper.querySelectorAll('.swiper-pagination-bullet')
+
+    const container_width = container.offsetWidth
+    const container_left = container.getBoundingClientRect().left
+
+    slides.forEach((el)=>{
+        el.addEventListener('click',()=>{
+            const active_slide_left = el.getBoundingClientRect().left
+            const active_slide_width = el.offsetWidth
+
+            if(
+                active_slide_left >  (container_left+container_width/2)
+            ){
+                let paginationPad =  Number(getComputedStyle(pagination).left.replace('px',''))
+                paginationPad-=active_slide_width
+                pagination.style.left = paginationPad + 'px'
+            }else if(Number(getComputedStyle(pagination).left.replace('px',''))!==0){
+                let paginationPad =  Number(getComputedStyle(pagination).left.replace('px',''))
+                paginationPad+=active_slide_width
+                pagination.style.left = paginationPad + 'px'
+            }
+        })
+    })
+}
+
+
+
