@@ -1,4 +1,6 @@
 .container_company {
+  padding-top: 53px;
+  padding-bottom: 57px;
   background-image: url("../img/bg-company.png");
 }
 
@@ -37,10 +39,50 @@
 }
 
 .description_company {
+  max-width: 602px;
   padding-top: 50px;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
   font-family: Lota, sans-serif;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.company_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px;
+  font-family: Lota, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231D1D;
+  max-width: 513px;
+  background: #fff;
+  margin-left: 57px;
+
+  >ul {
+    margin-bottom: 22px;
+    >li {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: flex-start;
+
+      &:last-of-type {
+        margin-bottom: 0!important;
+      }
+      >img{
+        margin-right: 20px;
+      }
+      >div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
 }
