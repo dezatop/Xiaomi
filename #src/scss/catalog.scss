@@ -86,6 +86,24 @@
     display: none;
   }
   .swiper_catalog {
-    display: initial;
+    display: flex;
+    position: relative;
+  }
+
+  .block__catalog {
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    bottom: -46px!important;
+    >span{
+      width: 15px!important;
+      border-radius: 1px!important;
+      height: 2px!important;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #FF6A08!important;
   }
 }

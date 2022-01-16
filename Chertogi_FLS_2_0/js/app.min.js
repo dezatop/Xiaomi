@@ -41,12 +41,24 @@ const swiperNew = new Swiper('.swiperNew', {
     },
 });
 
-const swiper_catalog = new Swiper('.swiper_catalog', {
+const swiper_catalog = new Swiper(".swiper_catalog", {
     slidesPerView: 1,
-    initialSlide:0,
-    speed: 400,
     spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });
+
+const slider__reviews = new Swiper(".slider__reviews", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper_reviews-pagination",
+        clickable: true,
+    },
+});
+
 
 
 window.addEventListener('resize', function(e) {
