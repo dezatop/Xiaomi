@@ -21,13 +21,50 @@ try {
 
         catalogMobile.addEventListener('click' , function () {
             catalogListMenu.classList.toggle('hide')
+            this.querySelector('.cross_catalog').classList.toggle('hide')
         })
     }
+
+
 } catch (e) {
     console.log(e.message)
 }
 
+try {
+    function catalogLogic() {
+        const container_drop_catalog = document.querySelector('.container_drop_catalog').querySelectorAll('li')
+        const dop_drop_list_catalog = document.querySelectorAll('.dop_drop_list_catalog')
+        const catalog = document.querySelector('.catalog')
+        let activeIndex
+        container_drop_catalog.forEach((element, index) => {
+            element.addEventListener('click', function (e){
+                e.stopPropagation()
+                if(activeIndex !== index) {
+                    dop_drop_list_catalog[index].classList.add('viewBlock')
+                    dop_drop_list_catalog[activeIndex]?.classList.remove('viewBlock')
+                    activeIndex = index
+                } else if(activeIndex === index) {
+                    dop_drop_list_catalog[activeIndex].classList.toggle('viewBlock')
+                }
+            })
+        })
+
+        catalog.addEventListener('click', function (e) {
+            e.stopPropagation()
+            this.querySelector('.drop_catalog').classList.toggle('hide')
+        })
+
+        document.body.addEventListener('click', function () {
+            document.querySelector('.drop_catalog').classList.add('hide')
+            dop_drop_list_catalog[activeIndex]?.classList.remove('viewBlock')
+        })
+    }
+} catch (e){
+    console.log(e.message)
+}
+
 Burger()
+catalogLogic()
 const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     initialSlide:0,

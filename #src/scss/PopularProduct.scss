@@ -323,6 +323,10 @@ fieldset {
   width: auto;
 }
 
+.mobile_list_popular {
+  display: none;
+}
+
 @media (min-width: $minWidth+px) and (max-width: $maxWidth+px) {
   .popular__product {
     width: auto;
@@ -348,6 +352,16 @@ fieldset {
 @media (max-width: 992px) {
   .list__categories {
     display: none !important;
+  }
+
+  .mobile_list_popular {
+    display: block;
+    transform: translateY(7px);
+  }
+
+  .title_wrap {
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
