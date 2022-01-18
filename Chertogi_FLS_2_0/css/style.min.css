@@ -305,7 +305,7 @@ body._lock {
   margin-bottom: 7px;
   font-size: 16px;
   line-height: 24px;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
 }
 .under__header .wrapper__under__header .catalog .drop_catalog .dop_drop_list_catalog > ul > li:hover:nth-child(1) .catalog1 {
   display: flex;
@@ -451,7 +451,7 @@ body._lock {
 }
 
 .catalog_mobile {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,7 +470,7 @@ body._lock {
 
 .menu_mobile_list {
   position: relative;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   display: flex;
   flex-direction: column;
   font-weight: 500;
@@ -748,7 +748,7 @@ body._lock {
 }
 .popular__product .list__categories > li {
   cursor: pointer;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #231D1D;
@@ -768,7 +768,7 @@ body._lock {
 
 .more_product {
   cursor: pointer;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 500;
   font-size: 18px;
   display: flex;
@@ -820,7 +820,7 @@ body._lock {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   color: #231D1D;
   line-height: 21px;
@@ -830,7 +830,7 @@ body._lock {
   padding-right: 7px;
 }
 .__product .container__description .product__title > a {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -838,7 +838,7 @@ body._lock {
   margin-bottom: 15px;
 }
 .__product .container__description .cost__cart {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   display: flex;
   justify-content: space-between;
 }
@@ -859,7 +859,7 @@ body._lock {
   line-height: 17px;
 }
 .__product .container__description .cost__cart .container__cost .current__cost {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -923,7 +923,7 @@ body._lock {
 }
 
 .current__cost {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -1084,7 +1084,7 @@ fieldset {
   width: 370px;
   height: 236px;
   border-radius: 5px;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   color: #FFF;
 }
 .block__catalog > h1 {
@@ -1224,7 +1224,7 @@ fieldset {
   height: 180px;
 }
 .container__benefits .container_element_block > div {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   line-height: 27px;
   color: #231D1D;
   font-weight: 500;
@@ -1368,7 +1368,7 @@ fieldset {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   line-height: 24px;
   display: flex;
   flex-direction: column;
@@ -1381,7 +1381,7 @@ fieldset {
   justify-content: space-between;
   height: 100%;
   padding: 30px;
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #231D1D;
@@ -1473,7 +1473,7 @@ fieldset {
 }
 
 .link_magazin {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -1497,7 +1497,7 @@ fieldset {
 }
 
 .statistic_rating {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -1505,7 +1505,7 @@ fieldset {
 }
 
 .write_more {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   margin-top: 32px;
   display: flex;
   align-items: center;
@@ -1565,7 +1565,7 @@ fieldset {
 }
 
 .list_comment p {
-  font-family: Lota, sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;

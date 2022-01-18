@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('_head.html',{
+"title":"Оплата"
+})
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="payment-page">
+                <div class="_container">
+                    <div class="payment-page__bg">
+                        <picture>
+                            <source media="(max-width: 576px)" 
+                                    srcset="img/payment-bg-mob.png">
+                            <img class="payment-page__bg-img" src="img/payment-bg.png">
+                        </picture>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="payment-page__logo">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="payment-page__box">
+                                <div class="payment-page__box-sum">
+                                    <p>Сумма заказа </p>
+                                    <p><span>35 200</span> рублей</p>
+                                </div>
+                                <div class="payment-page__box-form">
+                                    <div class="payment-form">
+                                        <div class="payment-form__field">
+                                            <label class="form-input" for="numbersCart">
+                                                <span class="form-input__span">По карте</span>
+                                                <input class="form-input__input" type="text" id="numbersCart"
+                                                    placeholder="Номер карты">
+                                            </label>
+                                        </div>
+                                        <div class="payment-form__field">
+                                            <div class="payment-form__field-group">
+                                                <div class="payment-form__field-item">
+                                                    <label class="form-input" for="monthYears">
+                                                        <input class="form-input__input" type="text" id="monthYears"
+                                                            placeholder="Месяц/год">
+                                                    </label>
+                                                </div>
+                                                <div class="payment-form__field-item">
+                                                    <label class="form-input" for="cvvCod">
+                                                        <input class="form-input__input" type="text" id="cvvCod"
+                                                            placeholder="CVC/CVV - код">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="payment-form__btn">
+                                            <button class="buttonCom">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-page__box-payments">
+                                    <img src="img/payments.png" alt="payments">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

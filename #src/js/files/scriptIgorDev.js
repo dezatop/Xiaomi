@@ -293,3 +293,11 @@ tabs.forEach(tab => {
         target.classList.add('active')
     })
 })
+
+
+const dopBtn = document.getElementById('dopBtn');
+
+dopBtn.addEventListener('click', function () {
+    let content = dopBtn.nextElementSibling;
+    content.classList.toggle('open');
+})
