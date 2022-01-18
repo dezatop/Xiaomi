@@ -149,6 +149,7 @@
 @media (min-width: $minWidth+px) and (max-width: $maxWidth+px) {
   .container_reviews {
     @include adaptiv-value('margin-top', 100, 30, 0);
+    @include adaptiv-value('margin-bottom', 100, 30, 0);
   }
 }
 

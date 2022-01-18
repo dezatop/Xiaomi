@@ -366,7 +366,7 @@ fieldset {
 }
 
 @media (max-width: 768px) {
-  .wrapper__slider {
+  .wrapper__slider.none {
     display: none !important;
   }
 

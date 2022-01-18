@@ -128,9 +128,13 @@
     .day-product{
       position: absolute;
       left:50%;
+      width: 100%;
       transform: translate(-50%,0);
       top:calc(100% + 30px);
       color:$mainColor;
+      .__product{
+        margin: 0 auto;
+      }
       &__title{
         font-size: 24px;
         color:$mainColor;
