@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-    <title>Главная</title>
+    <title>Оформление заказа</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link href="librery/bootstrap.min.css" rel="stylesheet"
@@ -1164,626 +1164,321 @@
 </header>
 
 			<main class="page">
-				<section class="product-view">
-    <div class="product-view__container _container">
-        <div class="product-view__body">
-            <div class="product-view__navigation">
-                <a href="#" >
-                    Каталог
-                </a>
-
-                <a href="#" >
-                    Смартфоны
-                </a>
-
-                <a href="#" >
-                    Смартфон Xiaomi Redmi Note 10S 6/64GB NFC (Pebble White)
-                </a>
-            </div>
-            <div class="row">
-                <div class=" col-xl-5  ">
-
-                    <div class="product-view__product">
-                        <h1 class="product-view__product-title">
-                            Xiaomi Redmi Note 10S
-                        </h1>
-                        <div class="product-view__product-stars">
-                            <form>
-                                <fieldset class="product-view__fieldset">
-                                    <span class="star-cb-group">
-                                      <input type="radio" id="rating-51.11" name="rating" value="5" /><label for="rating-51.11">5</label>
-                                      <input type="radio" id="rating-41.22" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                      <input type="radio" id="rating-31.33" name="rating" value="3" /><label for="rating-41.22">3</label>
-                                      <input type="radio" id="rating-21.44" name="rating" value="2" /><label for="rating-31.33">2</label>
-                                      <input type="radio" id="rating-11.55" name="rating" value="1" /><label for="rating-21.44">1</label>
-                                      <input type="radio" id="rating-01.66" name="rating" value="0" class="star-cb-clear" /><label for="rating-11.55">0</label>
-                                    </span>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="slider__flex ">
-                        <div class="slider__col">
-
-                            <div class="slider__thumbs">
-                                <div class="swiper-container"> <!-- Слайдер с превью -->
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"> <img src="img/icons_IgD/pag_1.png" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"> <img src="img/icons_IgD/pag_2.png" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"> <img src="img/icons_IgD/pag_3.png" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"> <img src="img/icons_IgD/pag_4.png" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slider__image"> <img src="img/icons_IgD/pag_5.png" /></div>
-                                        </div>
-                                    </div>
+				<div class="order-form">
+    <div class="_container">
+        <div class="order-form__title">
+            <h2>Оформление заказа</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="order-form__body ">
+                    <div class="order-form__body-item order-form__body-item--underline">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/recipient.svg" alt="recipient">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Получатель</p>
                                 </div>
                             </div>
-
-                        </div>
-
-                        <div class="slider__images-pagination"></div>
-
-                        <div class="slider__images">
-                            <div class="swiper-container"> <!-- Слайдер с изображениями -->
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="slider__image preview">
-                                            <img src="img/icons_IgD/slide.png" alt="" class="productViewSwiper__img">
+                            <div class="form-order__box">
+                                <div class="form-user-contact">
+                                    <div class="form-user-contact__box">
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="phone">
+                                                <span class="form-input__span form-input__span--required">Номер
+                                                    телефона</span>
+                                                <input class="form-input__input" type="phone" id="phone"
+                                                    placeholder="+7 (___) ___-__-__">
+                                            </label>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__image preview">
-                                            <img src="img/icons_IgD/slide.png" alt="" class="productViewSwiper__img">
-
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="email">
+                                                <span class="form-input__span">E-mail</span>
+                                                <input class="form-input__input" type="email" id="email"
+                                                    placeholder="yourmail@xiaomi.ru">
+                                            </label>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__image preview">
-                                            <img src="img/icons_IgD/slide.png" alt="" class="productViewSwiper__img">
-
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__image preview">
-                                            <img src="img/icons_IgD/slide.png" alt="" class="productViewSwiper__img">
-
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__image preview">
-                                            <img src="img/icons_IgD/slide.png" alt="" class="productViewSwiper__img">
-
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="name">
+                                                <span class="form-input__span">Имя</span>
+                                                <input class="form-input__input" type="text" id="name"
+                                                    placeholder="Иван">
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
+                    <div class="order-form__body-item order-form__body-item--underline">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/delivery.svg" alt="delivery">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Доставка</p>
+                                </div>
+                            </div>
+                            <div class="form-order__box">
+                                <div class="form-delivery">
+                                    <div class="form-delivery__item">
+                                        <label class="form-input" for="city">
+                                            <span class="form-input__span">Напишите ваш
+                                                город, поселелок, село</span>
+                                            <input class="form-input__input" type="text" id="city" placeholder="Москва">
+                                        </label>
+                                    </div>
+                                    <div class="form-delivery__item">
+                                        <div class="form-delivery__radio">
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="courier" checked>
+                                                        <label class="form-radio__label" for="courier">
+                                                            Курьером: от 300
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">сегодня, 06
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="self-delivery">
+                                                        <label class="form-radio__label" for="self-delivery">
+                                                            Самовывоз: от 100
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">завтра, 07
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="express-delivery">
+                                                        <label class="form-radio__label" for="express-delivery">
+                                                            Срочная доставка: от 450
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">сегодня, 06
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-delivery__item form-delivery__item--address">
+                                        <div class="form-address">
+                                            <div class="form-address__body">
+                                                <div class="form-address__body-item">
+                                                    <label class="form-input" for="address">
+                                                        <span class="form-input__span">Адрес</span>
+                                                        <input class="form-input__input" type="text" id="address">
+                                                    </label>
+                                                </div>
+                                                <div class="form-address__body-item">
+                                                    <label class="form-input" for="opartment">
+                                                        <span class="form-input__span">Квартира/офис</span>
+                                                        <input class="form-input__input" type="text" id="opartment">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-address__dop">
+                                                <button class="form-address__dop-btn" id="dopBtn">Дополнительно</button>
+                                                <div class="form-address__dop-wrapper">
+                                                    <div class="form-address__dop-container">
+                                                        <div class="form-address__dop-box">
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="entrance">
+                                                                    <span class="form-input__span">Подъезд</span>
+                                                                    <input class="form-input__input" type="text" id="entrance">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="intercom">
+                                                                    <span class="form-input__span">Домофон</span>
+                                                                    <input class="form-input__input" type="text" id="intercom">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="floor">
+                                                                    <span class="form-input__span">Этаж</span>
+                                                                    <input class="form-input__input" type="text" id="floor">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="comment">
+                                                                    <span class="form-input__span">Комментарий к заказу</span>
+                                                                    <input class="form-input__input" type="text" id="comment">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form__body-item">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/payment.svg" alt="payment">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Способ оплаты</p>
+                                </div>
+                            </div>
+                            <div class="form-order__box">
+                                <div class="payment-info">
+                                    <div class="payment-info__text">
+                                        <p class="payment-info__text-payments">VISA / MasterCard / МИР</p>
+                                        <p>Надежная защита денежных средств. </p>
+                                        <p>Мгновенные платежи не выходя из дома. </p>
+                                        <p>Для получения чека заполните почту (email).</p>
+                                    </div>
+                                    <div class="payment-info__imgs">
+                                        <img src="img/payments.png" alt="payments">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-1"></div>
-                <div class="col-xl-6 product-view__article ">
-
-                    <div class="product-view__article-block1">
-                        <div class="product-view__option">
-                            <div class="product-view__option-title">
-                                Артикул:
+            </div>
+            <div class="col-lg-5">
+                <div class="order-form__sidebar">
+                    <div class="form-order">
+                        <div class="form-order__header">
+                            <div class="form-order__header-icon">
+                                <img src="img/icons/circleChekmark.svg" alt="order list">
                             </div>
-                            <div class="product-view__option-data">
-                                124618
-                            </div>
-                        </div>
-
-                        <button class="buttonCom global-button green ">
-                            Есть в наличии
-                        </button>
-
-                    </div>
-
-                    <div class="product-view__article-block2">
-                        <div class="product-view__article-title">
-                            Краткие характиристики
-                        </div>
-                        <div class="product-view__article-block2__main">
-                            <div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Спецификация памяти:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        UFS 3.1
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Тип Озу:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        LPDR4
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        4G LTE:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        Есть
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        5G:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        Есть
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Система A-GPS:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        Есть
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Wi-Fi:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        Есть
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Беспроводная зарядка:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        Нет
-                                    </div>
-                                </div>
-                                <div class="product-view__option">
-                                    <div class="product-view__option-img">
-                                        <img src="img/icons_IgD/green.svg" alt="">
-                                    </div>
-                                    <div class="product-view__option-title">
-                                        Версия Bleutooth:
-                                    </div>
-                                    <div class="product-view__option-data">
-                                        v 5.2
-                                    </div>
-                                </div>
-
+                            <div class="form-order__header-text">
+                                <p>Состав заказа</p>
                             </div>
                         </div>
-
-                        <div class="product-view__article-link">
-                            Все характиристики
-                        </div>
-
-                    </div>
-
-                    <div class="product-view__article-block3">
-                        <div class="product-view__article-title">
-                            Цвет:
-                        </div>
-                        <div class="checkbox1">
-                                <label  class="custom-checkbox">
-                                    <input disabled type="radio" name='check' class="custom-radio">
-                                    <div></div>
-                                </label>
-                               <label  class="custom-checkbox">
-                                   <input  type="radio" name='check' class="custom-radio">
-                                   <div></div>
-
-                               </label>
-                               <label   class="custom-checkbox">
-                                   <input    type="radio" name='check' class="custom-radio">
-                                   <div></div>
-
-                               </label>
-                               <label  class="custom-checkbox">
-                                   <input  type="radio" name='check' class="custom-radio">
-                                   <div></div>
-
-                               </label>
-                               <label  class="custom-checkbox">
-                                   <input  type="radio" name='check' class="custom-radio">
-                                   <div></div>
-
-                               </label>
-
+                        <div class="form-order__box">
+                            <div class="form-sidebar">
+                                <div class="form-sidebar__list">
+                                    <div class="product-list">
+                                        <div class="product-list__item">
+                                            <div class="order-product">
+                                                <div class="order-product__img">
+                                                    <img src="img/icons_IgD/5product.png" alt="img">
+                                                </div>
+                                                <div class="product-block">
+                                                    <div class="product-block__title">
+                                                        <div class="product-block__title-p">
+                                                            Xiaomi Redmi Note 10S, 256GB, Blue grey
+                                                        </div>
+                                                        <img src="img/icons_IgD/korzina.svg" alt="delete"
+                                                            class="product-block__title-img">
+                                                    </div>
+                                                    <div class="product-block__price__container">
+                                                        <div>
+                                                            <div class="product-block__price-count">
+                                                                <div class="buttonCountMinus color">
+                                                                    -
+                                                                </div>
+                                                                <div class="buttonCountNumber">
+                                                                    1
+                                                                </div>
+                                                                <div class="buttonCountPlus">
+                                                                    +
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/icons_IgD/korzina.svg" alt="delete"
+                                                        class="product-block__title-img">
+                                                        <div class="product-block__price">
+                                                            <div class="p">
+                                                                <span>35 900</span>
+                                                                <span>-700</span>
+                                                            </div>
+                                                            <div class="h">35 200 рублей</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-block__price__pricemob">
+                                                        <div class="product-block__price">
+                                                            <div class="p">
+                                                                <span>35 900</span>
+                                                                <span>-700</span>
+                                                            </div>
+                                                            <div class="h">35 200 рублей</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__cupon">
+                                    <div class="form-cupon">
+                                        <div class="form-cupon__name">
+                                            <p>Есть купон?</p>
+                                        </div>
+                                        <div class="form-cupon__box">
+                                            <div class="form-cupon__item">
+                                                <label class="form-input" for="cupon">
+                                                    <input class="form-input__input" type="text" id="cupon" placeholder="Номер купона">
+                                                </label>
+                                            </div>
+                                            <div class="form-cupon__item">
+                                                <button class="grey-btn">Отправить</button>
+                                            </div>
+                                            <div class="form-cupon__item">
+                                                <button class="underline-btn">Отменить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__price">
+                                    <div class="form-sidebar__price-text">
+                                        <p>Товары с учетом скидки:</p>
+                                        <span>35 200</span>
+                                    </div>
+                                    <div class="form-sidebar__price-text">
+                                        <p>Стоимость доставки:</p>
+                                        <span>от 300</span>
+                                    </div>
+                                    <div class="form-sidebar__price-text form-sidebar__price-text--sum">
+                                        <p>Итого:</p>
+                                        <span>35 500</span>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__btn">
+                                    <button class="buttonCom">Оформить заказ</button>
+                                </div>
+                                <div class="form-sidebar__checkbox">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="checkbox">
+                                        <label class="checkbox__label" for="checkbox">
+                                            <span class="checkbox__label-checkbox"></span>
+                                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Условиями продажи</a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="product-view__article-block4">
-                        <div class="product-view__article-title">
-                            Память:
-                        </div>
-                        <div class="checkbox1">
-                            <label  class="custom-checkbox">
-                                <input disabled type="radio" name='check1' class="custom-radio">
-                                <div class="label">128 GB</div>
-                            </label>
-                            <label  class="custom-checkbox">
-                                <input  type="radio" name='check1' class="custom-radio">
-                                <div class="label">256 GB</div>
-
-                            </label>
-                            <label   class="custom-checkbox">
-                                <input    type="radio" name='check1' class="custom-radio">
-                                <div class="label">512 GB</div>
-
-                            </label>
-
-                        </div>
-                    </div>
-
-                    <div class="product-view__article-block5">
-                        <div class="product-view__article-title">
-                            Количество:
-                        </div>
-                        <div class="product-block__price-count">
-                            <div class="buttonCountMinus color" >
-                                -
-                            </div>
-                            <div class="buttonCountNumber">
-                                1
-                            </div>
-                            <div class="buttonCountPlus">
-                                +
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="product-view__article-block6">
-                        <div class="product-block__price">
-                            <div class="p">
-                                <span>35 900</span>
-                                <span>-700</span>
-                            </div>
-                            <div class="h">35 200 рублей</div>
-                        </div>
-                    </div>
-
-                    <div class="product-view__article-block7">
-                        <button class="buttonCom global-button ">
-                            Купить
-                        </button>
-                        <a href="#" class="a">
-                            Купить в один клик
-                        </a>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-				<section class="view-tabs _container">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="tabs">
-                <div class="tabs_header">
-                        <button data-tab-target="#tabs_content1"
-                                class="active tabs_header__item ">
-                            Обзор
-                        </button>
-                        <button data-tab-target="#tabs_content2"
-                                class=" tabs_header__item ">
-                            Характеристики
-                        </button>
-                </div>
-                <div class="tabs_content">
-                    <div id="tabs_content1" class="tabs_content__item active" data-tab-content>
-                        <div class="tabs_content-title">
-                            Смартфон Xiaomi Redmi Note 10S
-                        </div>
-                        <div class="tabs_content-p">Смартфон Xiaomi Redmi Note 10S с AMOLED-экраном диагональю 6,43
-                            дюйма и разрешением 2400х1080. Процессор MediaTek Helio G95, видеоускоритель ARM Mali-G76
-                            MC4. Емкость аккумулятора – 5000 мАч, зарядка 33 Вт. Основная камера – 64+8+2+2 МР,
-                            фронтальная – 13 МР.
-                        </div>
-                        <div class="tabs_content-p">В Xiaomi Redmi Note 10S установлена 6-43-дюймовая AMOLED-матрица
-                            разрешением 2400х1080 пикселей с пиковой яркостью 1100 нит. Поддержка цветовой гаммы DCI-P3,
-                            8-битной цветности, режима чтения 3.0. Сертификация SGS свидетельствует о минимальном уровне
-                            синего излучения.
-                        </div>
-                        <div class="tabs_content-p">Разрешение основной камеры составляет 64 мегапикселя с диафрагмой
-                            f/1.79. За панорамную съемку отвечает 8-мегапиксельный датчик, за макросъемку –
-                            2-мегапиксельный модуль. Есть датчик глубины разрешением 2 мегапикселя для портретной
-                            съемки. Поддерживается запись видео в разрешении 4К. Фронтальная 13-мегапиксельная камера с
-                            искусственным интеллектом записывает видео в 1080р.
-                        </div>
-                        <div class="tabs_content-p">Смартфон Redmi Note 10S оснащается процессором MediaTek Helio G95 с
-                            тактовой частотой 2,05 ГГц и графическим чипом ARM Mali-G76 MC4. Оперативная память
-                            представлена типом LPDDR4X, а встроенное хранилище – UFS 2.2.
-                        </div>
-                        <div class="tabs_content-p">Емкость аккумуляторной батареи равняется 5000 мАч. Для зарядки
-                            используется зарядный блок мощностью 33 Вт с кабелем USB Type-C. Корпус защищен от пыли и
-                            влаги по стандарту IP53.
-                        </div>
-                        <div class="tabs_content-p">Для бесконтактной оплаты задействуется модуль NFC. Беспроводные технологии представлены Wi-Fi 2,4 ГГц/5 ГГц и Bluetooth 5.0. Установлено 2 динамика, которые сертифицированы по стандарту Hi-Res. Есть 3,5 мм разъем для наушников.
-                        </div>
-                    </div>
-                    <div id="tabs_content2" class="tabs_content__item " data-tab-content>
-
-                        <div class="tabs_content__item-container">
-                            <div class="tabs_content-title">
-                                Общие
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Бренд
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    Redmi
-                                </div>
-
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Цвет
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    бронза
-                                </div>
-
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Модель / Код производителя
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    Note 10 Pro
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tabs_content__item-container">
-                            <div class="tabs_content-title">
-                                Производительность
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Процессор
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    Qualcomm Snapdragon 732G
-                                </div>
-
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Количество ядер процессора, шт
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    8
-                                </div>
-
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Объем встроенной памяти (ПЗУ), ГБ
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    64
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="tabs_content__item-container">
-                            <div class="tabs_content-title">
-                                Дисплей
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Матрица
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    AMOLED
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="tabs_content__item-container">
-                            <div class="tabs_content-title">
-                                Связь
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Количество SIM-карт
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    2
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="tabs_content__item-container">
-                            <div class="tabs_content-title">
-                                Основные
-                            </div>
-
-                            <div class="dot_block">
-
-                                <div class="dot_block__container">
-                                    <div class="dot_block__title">
-                                        Оболочка
-                                    </div>
-                                    <div class="dot_block__dot"></div>
-                                </div>
-
-                                <div class="dot_block__p">
-                                    Android
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="__product">
-                <div class="product__img">
-                    <img src="./img/phone.png" alt="phone">
-                </div>
-                <div class="container__description">
-                    <div class="product__description">
-                        <div class="product__like">
-                            <span>Смартфон</span>
-                            <img src="./img/icons/heart_product.svg" alt="heart_product">
-                        </div>
-                    </div>
-                    <div class="product__title">
-                        <a href="#">
-                            Xiaomo Mi 11T Pro 8GB /<br/> 256GB  (Grey)
-                        </a>
-                    </div>
-                    <form>
-                        <fieldset>
-                                    <span class="star-cb-group">
-                                      <input type="radio" id="rating-51.11" name="rating" value="5" /><label for="rating-51.11">5</label>
-                                      <input type="radio" id="rating-41.22" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                      <input type="radio" id="rating-31.33" name="rating" value="3" /><label for="rating-41.22">3</label>
-                                      <input type="radio" id="rating-21.44" name="rating" value="2" /><label for="rating-31.33">2</label>
-                                      <input type="radio" id="rating-11.55" name="rating" value="1" /><label for="rating-21.44">1</label>
-                                      <input type="radio" id="rating-01.66" name="rating" value="0" class="star-cb-clear" /><label for="rating-11.55">0</label>
-                                    </span>
-                        </fieldset>
-                    </form>
-                    <div class="cost__cart">
-                        <div>
-                            <div class="container__cost">
-                                <span class="old__cost">35 900</span>
-                                <span class="cost">-700</span>
-                            </div>
-                            <span class="current__cost">
-                                            35 200
-                                        </span>
-                        </div>
-                        <button>
-                            <img src="./img/icons/cart_product.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="view-tabs__as">
-        <div class="view-tabs__as-img">
-            <img src="img/icons_IgD/Error.svg" alt="">
-        </div>
-        <div class="view-tabs__as-p">
-            <p>
-                Технические характеристики и внешний вид товара могут отличаться, приоритетную силу имеет реальный продукт.
-            </p>
-            <p>
-                Пожалуйста, если вы увидели, что в описании товара есть ошибка, или просто опечатка, то дайте нам знать. Мы быстро исправим.
-            </p>
-        </div>
-
-    </div>
-</section>
-
+</div>
 			</main>
 			<footer class="footer">
 	<div class="footer__container _container">

@@ -1,0 +1,315 @@
+<div class="order-form">
+    <div class="_container">
+        <div class="order-form__title">
+            <h2>Оформление заказа</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="order-form__body ">
+                    <div class="order-form__body-item order-form__body-item--underline">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/recipient.svg" alt="recipient">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Получатель</p>
+                                </div>
+                            </div>
+                            <div class="form-order__box">
+                                <div class="form-user-contact">
+                                    <div class="form-user-contact__box">
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="phone">
+                                                <span class="form-input__span form-input__span--required">Номер
+                                                    телефона</span>
+                                                <input class="form-input__input" type="phone" id="phone"
+                                                    placeholder="+7 (___) ___-__-__">
+                                            </label>
+                                        </div>
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="email">
+                                                <span class="form-input__span">E-mail</span>
+                                                <input class="form-input__input" type="email" id="email"
+                                                    placeholder="yourmail@xiaomi.ru">
+                                            </label>
+                                        </div>
+                                        <div class="form-user-contact__item">
+                                            <label class="form-input" for="name">
+                                                <span class="form-input__span">Имя</span>
+                                                <input class="form-input__input" type="text" id="name"
+                                                    placeholder="Иван">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form__body-item order-form__body-item--underline">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/delivery.svg" alt="delivery">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Доставка</p>
+                                </div>
+                            </div>
+                            <div class="form-order__box">
+                                <div class="form-delivery">
+                                    <div class="form-delivery__item">
+                                        <label class="form-input" for="city">
+                                            <span class="form-input__span">Напишите ваш
+                                                город, поселелок, село</span>
+                                            <input class="form-input__input" type="text" id="city" placeholder="Москва">
+                                        </label>
+                                    </div>
+                                    <div class="form-delivery__item">
+                                        <div class="form-delivery__radio">
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="courier" checked>
+                                                        <label class="form-radio__label" for="courier">
+                                                            Курьером: от 300
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">сегодня, 06
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="self-delivery">
+                                                        <label class="form-radio__label" for="self-delivery">
+                                                            Самовывоз: от 100
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">завтра, 07
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-delivery__radio-item">
+                                                <div class="form-radio">
+                                                    <div class="form-radio__box">
+                                                        <input class="form-radio__input" type="radio"
+                                                            name="typeDelivery" id="express-delivery">
+                                                        <label class="form-radio__label" for="express-delivery">
+                                                            Срочная доставка: от 450
+                                                            <span class="form-radio__label-radio"></span>
+                                                            <span class="form-radio__label-span">сегодня, 06
+                                                                января</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-delivery__item form-delivery__item--address">
+                                        <div class="form-address">
+                                            <div class="form-address__body">
+                                                <div class="form-address__body-item">
+                                                    <label class="form-input" for="address">
+                                                        <span class="form-input__span">Адрес</span>
+                                                        <input class="form-input__input" type="text" id="address">
+                                                    </label>
+                                                </div>
+                                                <div class="form-address__body-item">
+                                                    <label class="form-input" for="opartment">
+                                                        <span class="form-input__span">Квартира/офис</span>
+                                                        <input class="form-input__input" type="text" id="opartment">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-address__dop">
+                                                <button class="form-address__dop-btn" id="dopBtn">Дополнительно</button>
+                                                <div class="form-address__dop-wrapper">
+                                                    <div class="form-address__dop-container">
+                                                        <div class="form-address__dop-box">
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="entrance">
+                                                                    <span class="form-input__span">Подъезд</span>
+                                                                    <input class="form-input__input" type="text" id="entrance">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="intercom">
+                                                                    <span class="form-input__span">Домофон</span>
+                                                                    <input class="form-input__input" type="text" id="intercom">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="floor">
+                                                                    <span class="form-input__span">Этаж</span>
+                                                                    <input class="form-input__input" type="text" id="floor">
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-address__dop-field">
+                                                                <label class="form-input" for="comment">
+                                                                    <span class="form-input__span">Комментарий к заказу</span>
+                                                                    <input class="form-input__input" type="text" id="comment">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form__body-item">
+                        <div class="form-order">
+                            <div class="form-order__header">
+                                <div class="form-order__header-icon">
+                                    <img src="img/icons/payment.svg" alt="payment">
+                                </div>
+                                <div class="form-order__header-text">
+                                    <p>Способ оплаты</p>
+                                </div>
+                            </div>
+                            <div class="form-order__box">
+                                <div class="payment-info">
+                                    <div class="payment-info__text">
+                                        <p class="payment-info__text-payments">VISA / MasterCard / МИР</p>
+                                        <p>Надежная защита денежных средств. </p>
+                                        <p>Мгновенные платежи не выходя из дома. </p>
+                                        <p>Для получения чека заполните почту (email).</p>
+                                    </div>
+                                    <div class="payment-info__imgs">
+                                        <img src="img/payments.png" alt="payments">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="order-form__sidebar">
+                    <div class="form-order">
+                        <div class="form-order__header">
+                            <div class="form-order__header-icon">
+                                <img src="img/icons/circleChekmark.svg" alt="order list">
+                            </div>
+                            <div class="form-order__header-text">
+                                <p>Состав заказа</p>
+                            </div>
+                        </div>
+                        <div class="form-order__box">
+                            <div class="form-sidebar">
+                                <div class="form-sidebar__list">
+                                    <div class="product-list">
+                                        <div class="product-list__item">
+                                            <div class="order-product">
+                                                <div class="order-product__img">
+                                                    <img src="img/icons_IgD/5product.png" alt="img">
+                                                </div>
+                                                <div class="product-block">
+                                                    <div class="product-block__title">
+                                                        <div class="product-block__title-p">
+                                                            Xiaomi Redmi Note 10S, 256GB, Blue grey
+                                                        </div>
+                                                        <img src="img/icons_IgD/korzina.svg" alt="delete"
+                                                            class="product-block__title-img">
+                                                    </div>
+                                                    <div class="product-block__price__container">
+                                                        <div>
+                                                            <div class="product-block__price-count">
+                                                                <div class="buttonCountMinus color">
+                                                                    -
+                                                                </div>
+                                                                <div class="buttonCountNumber">
+                                                                    1
+                                                                </div>
+                                                                <div class="buttonCountPlus">
+                                                                    +
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <img src="img/icons_IgD/korzina.svg" alt="delete"
+                                                        class="product-block__title-img">
+                                                        <div class="product-block__price">
+                                                            <div class="p">
+                                                                <span>35 900</span>
+                                                                <span>-700</span>
+                                                            </div>
+                                                            <div class="h">35 200 рублей</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-block__price__pricemob">
+                                                        <div class="product-block__price">
+                                                            <div class="p">
+                                                                <span>35 900</span>
+                                                                <span>-700</span>
+                                                            </div>
+                                                            <div class="h">35 200 рублей</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__cupon">
+                                    <div class="form-cupon">
+                                        <div class="form-cupon__name">
+                                            <p>Есть купон?</p>
+                                        </div>
+                                        <div class="form-cupon__box">
+                                            <div class="form-cupon__item">
+                                                <label class="form-input" for="cupon">
+                                                    <input class="form-input__input" type="text" id="cupon" placeholder="Номер купона">
+                                                </label>
+                                            </div>
+                                            <div class="form-cupon__item">
+                                                <button class="grey-btn">Отправить</button>
+                                            </div>
+                                            <div class="form-cupon__item">
+                                                <button class="underline-btn">Отменить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__price">
+                                    <div class="form-sidebar__price-text">
+                                        <p>Товары с учетом скидки:</p>
+                                        <span>35 200</span>
+                                    </div>
+                                    <div class="form-sidebar__price-text">
+                                        <p>Стоимость доставки:</p>
+                                        <span>от 300</span>
+                                    </div>
+                                    <div class="form-sidebar__price-text form-sidebar__price-text--sum">
+                                        <p>Итого:</p>
+                                        <span>35 500</span>
+                                    </div>
+                                </div>
+                                <div class="form-sidebar__btn">
+                                    <button class="buttonCom">Оформить заказ</button>
+                                </div>
+                                <div class="form-sidebar__checkbox">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="checkbox">
+                                        <label class="checkbox__label" for="checkbox">
+                                            <span class="checkbox__label-checkbox"></span>
+                                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Условиями продажи</a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
