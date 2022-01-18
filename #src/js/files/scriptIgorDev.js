@@ -252,48 +252,40 @@ footer__lists.forEach((el)=>{
     })
 })
 
-
-// ProductView slider
-
-new Swiper('.productViewSwiper', {
+// Инициализация превью слайдера
+const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 5,
+    spaceBetween: 10,
+    freeMode: true,
+});
+// Инициализация слайдера изображений
+const sliderImages = new Swiper('.slider__images .swiper-container', {
+    direction: 'horizontal',
     slidesPerView: 1,
-    speed: 400,
-    spaceBetween: 600,
-    pagination: {
-        el: ".productViewSwiper__swiper-pagination",
-        clickable: true
+    spaceBetween: 32,
+    mousewheel: true,
+    grabCursor: true,
+    thumbs: {
+        swiper: sliderThumbs
     },
+
 });
 
-const productViewSwiper=document.querySelector('.productViewSwiper')
 
-if(productViewSwiper){
-    const container = productViewSwiper.querySelector('.productViewSwiper__swiper-pagination__container')
-    const pagination = productViewSwiper.querySelector('.productViewSwiper__swiper-pagination')
-    const slides = productViewSwiper.querySelectorAll('.swiper-pagination-bullet')
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-    const container_width = container.offsetWidth
-    const container_left = container.getBoundingClientRect().left
-
-    slides.forEach((el)=>{
-        el.addEventListener('click',()=>{
-            const active_slide_left = el.getBoundingClientRect().left
-            const active_slide_width = el.offsetWidth
-
-            if(
-                active_slide_left >  (container_left+container_width/2)
-            ){
-                let paginationPad =  Number(getComputedStyle(pagination).left.replace('px',''))
-                paginationPad-=active_slide_width
-                pagination.style.left = paginationPad + 'px'
-            }else if(Number(getComputedStyle(pagination).left.replace('px',''))!==0){
-                let paginationPad =  Number(getComputedStyle(pagination).left.replace('px',''))
-                paginationPad+=active_slide_width
-                pagination.style.left = paginationPad + 'px'
-            }
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
         })
+        tabs.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
     })
-}
-
-
-
+})

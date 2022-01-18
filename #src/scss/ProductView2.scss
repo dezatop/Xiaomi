@@ -1,0 +1,115 @@
+
+.tabs {
+  width: 100%;
+}
+
+.tabs_header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.tabs_header__item {
+  position: relative;
+}
+.tabs_header__item.active:before {
+content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -8px;
+  height: 2px;
+  background: $colorBtn;
+}
+
+
+.tabs_content {
+  margin-top: 36px;
+}
+
+[data-tab-content],
+[data-tab2-content] {
+  display: none;
+}
+
+.active[data-tab-content],
+.active[data-tab2-content] {
+  display: block;
+}
+
+.tabs-content {
+  width: 100%;
+}
+
+.tabs_content-title{
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 30px;
+
+}
+.tabs_content-p{
+  line-height: 150%;
+}
+.tabs_content-p:not(:last-child){
+  margin-bottom: 25px;
+}
+
+.view-tabs{
+  &__as{
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #E2E4E5;
+    box-sizing: border-box;
+    box-shadow: 0 20px 40px rgba(158, 158, 158, 0.2);
+
+    &-p{
+      &>*{
+        line-height: 150%;
+      }
+      &>*:not(:last-child){
+       margin-bottom: 12px;
+      }
+    }
+
+    &-img{
+      width: 50px;
+      height: 50px;
+     img{
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+     }
+    }
+  }
+}
+.tabs_content__item-container:not(:last-child){
+  margin-bottom: 40px;
+}
+.dot_block{
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  &__container{
+    display: flex;
+    gap: 10px;
+    width: 560px;
+    align-items: flex-end;
+  }
+  &__title{
+    flex: 0 0 auto;
+    line-height: 150%;
+    color: $grey2;
+  }
+  &__dot{
+    flex: 1 1 auto;
+    border-bottom: 3px dotted #E5E5E5;
+  }
+  &__p{
+    display: flex;
+  }
+}
