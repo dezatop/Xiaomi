@@ -35,3 +35,16 @@
     z-index: 10;
   }
 }
+
+@media (min-width: $minWidth+px) and (max-width: $maxWidth+px) {
+ .new_block {
+   @include adaptiv-value('margin-top', 100, 80, 0);
+   @include adaptiv-value('margin-bottom', 100, 80, 0);
+ }
+}
+
+@media (max-width: 992px) {
+  .new_list_mobile{
+    margin-top: 22px!important;
+  }
+}

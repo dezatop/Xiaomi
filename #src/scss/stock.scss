@@ -3,6 +3,7 @@
 }
 
 .stock_wrapper {
+  width: auto;
   display: flex;
   margin-top: 100px;
   .stock_popular {
@@ -43,6 +44,14 @@
 .container_stock_item {
   >div {
     margin-bottom: 30px;
+  }
+}
 
+@media (max-width: 768px) {
+  .container_stock_item {
+    >div {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
